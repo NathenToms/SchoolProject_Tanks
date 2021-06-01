@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8057410561316126089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 129781809285703139}
+  - component: {fileID: -2191837754835623166}
+  - component: {fileID: 2146682979}
+  m_Layer: 0
+  m_Name: NodeSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &129781809285703139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8057410561316126089}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2191837754835623166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8057410561316126089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46102f20e7863234abed105c03f6976d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fighterPrefab: {fileID: 58820780711503999, guid: 412fb68aa6718b248a7adb1e254193c0,
+    type: 3}
+  chargerPrefab: {fileID: 3107085776561158194, guid: 0bb00d2ff3a929e4c9d818bdf52479d9,
+    type: 3}
+  swarmerPrefab: {fileID: 2212086307816132563, guid: 01e0ea9331425964888c9f346c3a8fed,
+    type: 3}
+  cruiserPrefab: {fileID: 8278412131455947766, guid: d70f243484b0f1349aa7336d65b5ffc7,
+    type: 3}
+  cargoPrefab: {fileID: 3107085776561158194, guid: ec334dcaca7277c4f90e6774cbc973fe,
+    type: 3}
+  spawnpoints: []
+  waypoints: []
+  waveBehaviour: {fileID: 11400000, guid: 153957047a10813488ea6b835df3bba0, type: 2}
+--- !u!114 &2146682979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8057410561316126089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2be4621fc02fcd489ca502579de541f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  combineMesh: 0
+  asteroidPrefabs:
+  - {fileID: 6309071368717258258, guid: 88692091a44eeb24094d9aed7c61a88d, type: 3}
+  - {fileID: 56720752552495293, guid: 3c88a883f832c884cbb80b26181606a3, type: 3}
+  - {fileID: 8430503025590420019, guid: 615fc9350ce36cf46af47ce1727015a3, type: 3}
+  - {fileID: 8755553170722625250, guid: a231b714607df5b4c9723a542528c97c, type: 3}
+  - {fileID: 7947022241719225802, guid: 320b12c856a7bf04eb6f381fef1803ce, type: 3}
+  materialTest: {fileID: 0}
+  seed: 0
+  minScale: 1
+  maxScale: 15
+  maxAsteroids: 500
+  minPos: -100
+  maxPos: 100
+  maxForce: 5
+  asteroids: []

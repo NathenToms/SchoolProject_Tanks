@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &561547919149143226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2465044044293828309}
+  - component: {fileID: 2945724864221912010}
+  - component: {fileID: -7555492748097110935}
+  m_Layer: 11
+  m_Name: FlockLeader
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2465044044293828309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561547919149143226}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -268.34525, y: -303.52576, z: -272.05865}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2945724864221912010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561547919149143226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a90f7802ab19ea740ba15ee4717e2424, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentStateID: 0
+  debugDraw: 0
+  waypoints: []
+  myStats: {fileID: 11400000, guid: 4273d16b5a2607c4ba774291c45860bb, type: 2}
+  collisionDistanceCheck: 150
+  waypointDistanceCheck: 50
+  playerDistanceCheck: 2500
+  attackDistanceCheck: 80
+  patrolDistanceCheck: 200
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 768
+  raySize: 7.5
+  thrusters: {fileID: 0}
+  showStats: 0
+  aiType: 0
+  attackStateRadius: 5
+  patrolStateRadius: 150
+  defenseStateRadius: 150
+--- !u!54 &-7555492748097110935
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561547919149143226}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

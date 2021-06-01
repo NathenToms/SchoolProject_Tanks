@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca81009aaf16c44eb77a08761b662d4, type: 3}
+  m_Name: DefaultShipStats
+  m_EditorClassIdentifier: 
+  shipName: Player
+  shipDescription: 
+  maxHealth: 200
+  maxShield: 200
+  shieldRegenPercent: 10
+  shieldRegenInterval: 2
+  shipSpeed: 50
+  rotationSpeed: 2.2
+  fireRate: 0.1
+  shipAcceleration: 40
+  shipDeceleration: 10
+  shipRotAcceleration: 20
+  shipRotDeceleration: 25
+  GunRotationSpeed: 200
+  boostSpeed: 200
+  strafeSpeed: 15
+  baseDamage: 4
+  healthDamageReduction: 6
+  shieldDamageReduction: 4
+  maxBoostGauge: 20
+  boostGaugeConsumeAmount: 1.8
+  boostGaugeRechargeAmount: 1.5
+  boostDepleteDelay: 5
+  sonicBoomTime: 5
+  reserveShield: 0
+  shieldBreakEMP: 0

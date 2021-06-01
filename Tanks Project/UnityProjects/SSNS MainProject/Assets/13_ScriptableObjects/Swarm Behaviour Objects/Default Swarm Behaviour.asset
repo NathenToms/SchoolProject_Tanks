@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a73310db2dc36334eab7a9abc5830e38, type: 3}
+  m_Name: Default Swarm Behaviour
+  m_EditorClassIdentifier: 
+  behaviours:
+  - {fileID: 11400000, guid: e59676b607803f74684a05b51b67298a, type: 2}
+  - {fileID: 11400000, guid: a563584e361b97f49acf8918ad71c76a, type: 2}
+  - {fileID: 11400000, guid: 9d3d0d2a5d9ea5d4cbefb91636fb7cb5, type: 2}
+  - {fileID: 11400000, guid: 93ada2702305df242b36093c7747631d, type: 2}
+  - {fileID: 11400000, guid: 871e7d51021f7364f830ce34b48cbe12, type: 2}
+  weights:
+  - 0.4
+  - 0.7
+  - 0.4
+  - 0.6
+  - 0.4
+  t: 0

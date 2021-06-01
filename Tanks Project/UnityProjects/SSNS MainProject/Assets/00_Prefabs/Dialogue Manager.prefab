@@ -1,0 +1,663 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5686437362363176917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5686437362363176915}
+  - component: {fileID: 5686437362363176914}
+  - component: {fileID: 5686437362363176918}
+  - component: {fileID: 1090276951}
+  m_Layer: 0
+  m_Name: Dialogue Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &5686437362363176915
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686437362363176917}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 83.05329, y: 140.38087, z: 540.87244}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5686437362363176914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686437362363176917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09d7c75e6599d84459b01e39d292fdd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 5686437362363176918}
+  dialogueText: {fileID: 0}
+  Dialogue:
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: cfcfd029b82e71343a89803e08f8467d, type: 3}
+    Name: All Surface Cannons Down
+    Text:
+    - All surface targets destroyed. Great job. Now take this bastard down for the
+      count.
+    displayTime:
+    - 0
+    Index: 0
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: cfa65ddf3ec2283449f69d22ac488688, type: 3}
+    Name: Almost All Targets Destroyed
+    Text:
+    - You almost destroyed all the surface targets. Go, go!
+    displayTime: []
+    Index: 1
+    volumeMultiplier: 2
+    alternatives: 
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: 9b2c0187e0694404eac90e76720f6f50, type: 3}
+    Name: Cargo Ship In bound
+    Text:
+    - Cargo ship inbound to the vessel! Take the big boy down before it can restore
+      integrity to the Dreadnovas armor!
+    displayTime: []
+    Index: 2
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: f79cb1c739e06a54684558901f33fe05, type: 3}
+    Name: Dread Jump V1
+    Text:
+    - Damnit! We couldnt stall them for long enough and they jumped out of the system.
+    - We'll pinpoint their signature and upload their location to your ships PDA.
+      Get a move on team!
+    displayTime:
+    - 4
+    Index: 3
+    volumeMultiplier: 1
+    alternatives: 0400000005000000
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: 3318e37e99d553a488bb6994ab276c69, type: 3}
+    Name: Dread Jump V2
+    Text:
+    - Damnit! Bastards broke through our hyperdrive jam and jumped out of the system.
+    - We'll trace their war path and load their position to your PDA. Hop to it gang!
+    displayTime:
+    - 4.5
+    Index: 4
+    volumeMultiplier: 1
+    alternatives: 0300000005000000
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: b18d1652bab15584fa74b17daefe848e, type: 3}
+    Name: Dread Jump V3
+    Text:
+    - Aw crap! We couldn't stall them for long enough and they've jumped out of the
+      system.
+    - We'll pinpoint their signature and upload their location to your ships PDA.
+      Get a move on team!
+    displayTime:
+    - 4
+    Index: 5
+    volumeMultiplier: 1
+    alternatives: 0300000004000000
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: e6df780e5d11e234eab4cf02595977a5, type: 3}
+    Name: Dreadnova Sighted
+    Text:
+    - Well it looks like we found the Dreadnova and they picked up your signature.
+    - They are deploying some of their forces to deal with you, so destroy a fair
+      amount of them
+    - so we can get to work on the capital ship.
+    displayTime:
+    - 4
+    - 4
+    Index: 6
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: c1fbba634f569bc40acfe0ae2fcf981d, type: 3}
+    Name: Fighter Wave Destroyed
+    Text:
+    - Supplementary fighter forces destroyed. Nicely done.
+    displayTime: []
+    Index: 7
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: 207aacd9aa15d4c4b9503cbc1e883f54, type: 3}
+    Name: Hull Shields Down V1
+    Text:
+    - Great work! The hull defense shields are offline. Now get to work on the surface
+    - cannons and find those weak spots! I'll get your ships PDA to highlight targets
+      for you.
+    displayTime:
+    - 4
+    Index: 8
+    volumeMultiplier: 1
+    alternatives: 09000000
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: e1337a24af856e44e9020be9954ac970, type: 3}
+    Name: Hull Shields Down V2
+    Text:
+    - Great work! The hull defense shields are offline. Now get to work on the surface
+    - cannons and weak spots on the hull. I'll get your ships PDS to highlight targets
+      for you.
+    displayTime:
+    - 4.5
+    Index: 9
+    volumeMultiplier: 1
+    alternatives: 08000000
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: 91c4414a049d54f49b069e8ff68c8e3c, type: 3}
+    Name: Intro V1
+    Text:
+    - We've located a DSG Dreadnova in the system, so be on your guard.
+    - Scanners show that the ship with a front mounted super cannon and a massive
+      fighter armada within its barracks.
+    - We've jammed their hyperdrive navigation for a short time so get the job done
+      quick. And TRY to come back with most of your body parts still attached.
+    displayTime:
+    - 4
+    - 6
+    Index: 10
+    volumeMultiplier: 1
+    alternatives: 0b0000000c000000
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: be5b5f850219c1e418f45e934ef11383, type: 3}
+    Name: Intro V2
+    Text:
+    - Eyes up gang! We are sending you to deal with a DSG class vessel loaded with
+      lucrative technology
+    - and a large super weapon mounted to the front. Take that big bastard down before
+      it can jump into hyperspace.
+    - We've only got one shot at this, so expect heavy resistance.
+    displayTime:
+    - 5
+    - 5
+    Index: 11
+    volumeMultiplier: 1
+    alternatives: 0a0000000c000000
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: 00f41586fa703624eb0926c7b00c7639, type: 3}
+    Name: Intro V3
+    Text:
+    - Our scanners have detected a DSG Dreadnova equipped with heavy armaments and
+      we need you
+    - to take it out before it comes for us. We've jammed its hyperdrive for the time
+      being
+    - so use this opportunity to hit em where it hurts and try not to mess it up in
+      the process.
+    displayTime:
+    - 5
+    - 5
+    Index: 12
+    volumeMultiplier: 1
+    alternatives: 0a0000000b000000
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: d14490323ba6dcb4c8629b063fb4831a, type: 3}
+    Name: Left Generator Reboot
+    Text:
+    - Shield Generator on the left side of the ship is rebooting! Take out the other
+      before it comes back online!
+    displayTime: []
+    Index: 13
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: f8613baff90e2d047a46e96e4cdca856, type: 3}
+    Name: Right Generator Reboot
+    Text:
+    - Shield Generator on the right side of the ship is rebooting! Take out the other
+      before it comes back online!
+    displayTime: []
+    Index: 14
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: b339e3c691a4103488a332e194777c7b, type: 3}
+    Name: New System V1
+    Text:
+    - Onto the next system team! Scans have picked up supplementary forces lingering
+      in the area.
+    - Find them, take them out and get back onto the Dreadnovas trail. Simple.
+    displayTime:
+    - 5
+    Index: 15
+    volumeMultiplier: 1
+    alternatives: 100000001100000012000000
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: e19e4e8847acaa84ea236fc43c333cfa, type: 3}
+    Name: New System V2
+    Text:
+    - You've reached the next system! Scans show residual forces in the area have
+      been deployed
+    - to halt your progress. I'll get your ships PDA to highlight targets for you.
+    displayTime:
+    - 4
+    Index: 16
+    volumeMultiplier: 1
+    alternatives: 0f0000001100000012000000
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: c07912ec0456e704db3be3d8f041f41e, type: 3}
+    Name: New System V3
+    Text:
+    - New system team! Take down this squadron of forces so that you have a window
+    - to pulse jump in pursuit of the Dreadnova. Good luck!
+    displayTime:
+    - 3.6
+    Index: 17
+    volumeMultiplier: 1
+    alternatives: 0f0000001000000012000000
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: 582310e67e7fdf647a3153f6c1e3ab36, type: 3}
+    Name: New System V4
+    Text:
+    - Welcome to the system gang! Pay close attention, the Dreadnova shouldn't be
+      too far ahead of us.
+    - Scanning the immediate area for hostiles.
+    displayTime:
+    - 4
+    Index: 18
+    volumeMultiplier: 1
+    alternatives: 0f0000001000000011000000
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: 7200d350b368289479d5e3fd85822059, type: 3}
+    Name: Out of Bounds V1
+    Text:
+    - Fair warning, any breach in company policy will result in a deduction from your
+      pay at the end of the month.
+    displayTime: []
+    Index: 19
+    volumeMultiplier: 1
+    alternatives: 1400000015000000
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: f7ec82cfc1970484f8ac3bdb833fa61f, type: 3}
+    Name: Out of Bounds V2
+    Text:
+    - Get back to the battlefield! If you don't, there will be consequences for breach
+      of contract!
+    displayTime: []
+    Index: 20
+    volumeMultiplier: 1
+    alternatives: 1300000015000000
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: 1b95be251d61f68499622ce2deb543f3, type: 3}
+    Name: Out of Bounds V3
+    Text:
+    - Where are you going?! You're jeopardizing the mission! Get back there!
+    displayTime: []
+    Index: 21
+    volumeMultiplier: 1
+    alternatives: 1300000014000000
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: a8fe922694c828c48b16e870611643e6, type: 3}
+    Name: Shield Generator Open V1
+    Text:
+    - Shield generator destroyed. Well done!
+    displayTime: []
+    Index: 22
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 1
+    SoundClip: {fileID: 8300000, guid: aace5b37978f76c4996eb43924fd7035, type: 3}
+    Name: Shield Generator Open V2
+    Text:
+    - Alright team, looks like we've got a shot at taking down the Dreadnova's shields
+    - take them both offline at the same time to shut down the system!
+    displayTime:
+    - 4
+    Index: 23
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: 50a376a593c564740be158e9438c43b3, type: 3}
+    Name: Coffee Maker Joke
+    Text:
+    - Captain, the janitorial bot has decided to interface with the coffee maker...
+      It cannot be cleaned.
+    displayTime: []
+    Index: 24
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: 30bf5bef2faad074b8a5a215f3fdf313, type: 3}
+    Name: Cultures Joke
+    Text:
+    - Captain, did you know in some cultures it's rude to blow your nose in public?
+    displayTime: []
+    Index: 25
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: c9c75f188950a4548a6dbb9407fa5426, type: 3}
+    Name: Pilot Fatigue Joke
+    Text:
+    - Pilot fatigue at critical levels. Dispensing Adderall and Modafinil.
+    displayTime: []
+    Index: 26
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: 4f4458866dff3f3498a4c2dc02158102, type: 3}
+    Name: Hazy Lights Joke
+    Text:
+    - Do not forget to clean hazy ship lights. Flight with sub-optimal vision may
+      be hazardous.
+    displayTime: []
+    Index: 27
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: 957a5f95a4e891345b9906c159640530, type: 3}
+    Name: Highlighters Joke
+    Text:
+    - Highlighters are an excellent way to remove stains from your body!
+    displayTime: []
+    Index: 28
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: 34f8e4bc7ca772745bf113ecdd7d09cd, type: 3}
+    Name: Scissors Joke
+    Text:
+    - Scissors are dangerous! Use a can opener to open blister-packs safely.
+    displayTime: []
+    Index: 29
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: e2798c6d9f2b400469d4df19786ae430, type: 3}
+    Name: Hippo Joke
+    Text:
+    - 'Caution, we have an outbreak of North-American house hippos! '
+    - Oh, wait, no, those are just giant rats... Carry on.
+    displayTime:
+    - 4
+    Index: 30
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: ae6f21218bf26f44db38408529c6c150, type: 3}
+    Name: Ice Pack Joke
+    Text:
+    - In the event of bodily mutilation, a 3:1 ratio of water and 97% alcohol
+    - will allow you to make your own soothing ice packs for your wounds.
+    displayTime:
+    - 6
+    Index: 31
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: fb115585bd5647c49aa71314726a8e73, type: 3}
+    Name: Incognito Mode Joke
+    Text:
+    - Captain, please keep in mind that your internet search history is not private.
+    - May I recommend, "Incognito Mode?
+    displayTime:
+    - 4
+    Index: 32
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: 817f2626a60aca242b0a4d506c76e763, type: 3}
+    Name: Lockpicking Joke
+    Text:
+    - In the event of lacking a probe, you can use a paper clip to pick a lock!
+    displayTime: []
+    Index: 33
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: b0b749ee36681964ab2a156fc6524f48, type: 3}
+    Name: Lonely Joke
+    Text:
+    - 'Loneliness reaching excessive levels; turning to: Companion Mode...'
+    displayTime: []
+    Index: 34
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: 90d4c7c5e4e233d47926a67312330b94, type: 3}
+    Name: Gottem Joke
+    Text:
+    - Did you know it's impossible to try to lick your nose and say, "MMM??
+    - 
+    - Hm, you just tried it didn't you?
+    displayTime:
+    - 4
+    - 1.5
+    Index: 35
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: b67617f9101ba044682a93a4f32fe62c, type: 3}
+    Name: Oxygen Joke
+    Text:
+    - Do not be alarmed if Oxygen generator failure occurs.
+    - Ship detonation will occur befor you experience any discomfort.
+    displayTime:
+    - 3
+    Index: 36
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: b72f104b18a29604983a41bfa774f121, type: 3}
+    Name: Mission CTRL Phone Joke
+    Text:
+    - Connecting you to Mission Control, long-distance charges will apply...
+    - 
+    - Is this thing on?
+    displayTime:
+    - 4
+    - 3.7
+    Index: 37
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: 48349d9fc7f761942b018473f64b1e4e, type: 3}
+    Name: Pilot Waste Joke
+    Text:
+    - High levels of pilot waste detected. Calculating auto-pilot route to nearest
+      Red Giant.
+    displayTime: []
+    Index: 38
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: 4af1ac4f21082984c8fefa849606694d, type: 3}
+    Name: Sad Netro
+    Text:
+    - Captain, we never just, "Talk" anymore...
+    displayTime: []
+    Index: 39
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: 2777da8253fc1b347bcefb6471400cc4, type: 3}
+    Name: Seatwarmer Joke
+    Text:
+    - Oops, sorry... Seat warmers were malfunctioning.
+    displayTime: []
+    Index: 40
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: ed049d4e2271c2f4da65ff4a124cc770, type: 3}
+    Name: Shirt Collar Joke
+    Text:
+    - Hair straighteners can be a useful way to iron shirt collars!
+    displayTime: []
+    Index: 41
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: 1973598a4b2490b4c9025532d6c14a65, type: 3}
+    Name: Space Joke
+    Text:
+    - Technically in space, everything is shinamite, because in space there is no
+      sound...
+    displayTime: []
+    Index: 42
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: 7e79a4e0152a7714c9141c26ca4c041b, type: 3}
+    Name: Survival Joke
+    Text:
+    - Starchy foods high in carbohydrates can be used as kindling if stranded on foreign
+      planets.
+    displayTime: []
+    Index: 43
+    volumeMultiplier: 1
+    alternatives: 
+  - OwnerType: 0
+    SoundClip: {fileID: 8300000, guid: 9154d55e35249ba4f80a96802607d2c3, type: 3}
+    Name: Zenith Joke
+    Text:
+    - Now bypassing Space Station Zenith, rated 1 star on the internet.
+    - Somebody said, "It smells like trash!
+    displayTime:
+    - 5
+    Index: 44
+    volumeMultiplier: 1
+    alternatives: 
+  NewDialogue:
+    OwnerType: 2
+    SoundClip: {fileID: 0}
+    Name: 
+    Text: []
+    displayTime: []
+    Index: 0
+    volumeMultiplier: 1
+    alternatives: 
+  SoundIcon: {fileID: 2800000, guid: a293d7658a0c12e488413fbb52810b1f, type: 3}
+  ShowDefaultEditor: 1
+--- !u!82 &5686437362363176918
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686437362363176917}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -8716578912363342228, guid: b7639791db06e7f4b9717ec7c33ef730,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1090276951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686437362363176917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4bdf28302b22634d8fdfbc4fd72c125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueRange:
+    min: 24
+    max: 44
+  timeSeconds:
+    min: 60
+    max: 120

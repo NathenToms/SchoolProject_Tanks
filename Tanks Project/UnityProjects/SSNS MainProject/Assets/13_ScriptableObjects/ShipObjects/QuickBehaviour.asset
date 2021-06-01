@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7e3859a5f47a94ba510f3ff97a51c5, type: 3}
+  m_Name: QuickBehaviour
+  m_EditorClassIdentifier: 
+  shipName: The Ship
+  shipDescription: 
+  xRot: 14
+  yRot: 10
+  zRot: 50
+  RotSpeed: 0.1
+  moveScale: 5
+  moveSpeed: 0.1
+  normalPos: {x: 0, y: 7, z: -40}
+  boostPos: {x: 0, y: 7, z: -70}
+  sonicPos: {x: 0, y: 7, z: -90}
+  warpPos: {x: 0, y: 7, z: -120}
+  deathPos: {x: 0, y: 7, z: -200}
+  cameraSpeed: 0.5

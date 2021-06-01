@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 995b72f791929c843bcfde9a052502c8, type: 3}
+  m_Name: Tutorial
+  m_EditorClassIdentifier: 
+  prefabsToSpawn:
+  - {fileID: 8057410561316126089, guid: 7f15efc27668a13468b16d0b51f2b54d, type: 3}
+  areaSize: 1000
+  smokeAmount: 200
+  asteroidAmount: 100
